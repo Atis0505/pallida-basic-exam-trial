@@ -17,15 +17,11 @@ def name_from_email(email_address):
             full_name += email_address[i]
         else:
             flag = True
-    full_name_flag = False
-    for i in range(len(full_name)):
-        if full_name[i] != "@" and flag == False:
-            last_name_string += full_name[i]
-        else:
-            last_name_string += full_name[i]
-            
+    first_name_string = full_name[:4]
+    last_name_string = full_name[-3:]
+    
 
-    return (last_name_string + " " + first_name_string)
+    return (last_name_string.title() + " " + first_name_string.title())
 
 
 print(name_from_email("elek.viz@exam.com"))
