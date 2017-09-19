@@ -13,7 +13,9 @@ def add_word(hun_word, eng_word):
     new[hun_word] = eng_word
     print(dictionary)
 
+
 add_word("kutya","dog")
+
 # Implement these methods. They should return the translation of the given
 # word form the list 'dictionary'
 
@@ -25,7 +27,6 @@ def translate_to_hun(eng_word):
                 print(key)
             
         
-
 translate_to_hun("tree")
 
 def translate_to_eng(hun_word):

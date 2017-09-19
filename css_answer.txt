@@ -1,0 +1,6 @@
+What is the difference between id and class in CSS? [2p]
+
+Your answer:
+
+You can use the id just for one things to refer,
+but with the class, you can refer many items together.
