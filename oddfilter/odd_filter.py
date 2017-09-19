@@ -9,7 +9,7 @@ def odd_number_filter_func(number_list):
     for element in number_list:
         if element % 2 != 0:
             filtered_list.append(element)
-    print(filtered_list)
+    return filtered_list
 
 
-odd_number_filter_func(odd_filter)
+print(odd_number_filter_func(odd_filter))
