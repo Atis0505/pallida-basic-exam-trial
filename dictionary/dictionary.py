@@ -18,9 +18,22 @@ add_word("kutya","dog")
 # word form the list 'dictionary'
 
 
-def translate_to_hun(eng_word):
-    pass
+# def translate_to_hun(eng_word):
+#     element_list = []
+#     for item in dictionary:
+#         element_list.append(item[eng_word])
+#     print(element_list)    
+            
+        
 
+# translate_to_hun("three")
 
 def translate_to_eng(hun_word):
-    pass
+    find_list=[]
+    for item in dictionary:
+        for key, value in item.items():
+            if key == hun_word:
+                print(value)
+
+
+translate_to_eng("fa")
