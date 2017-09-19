@@ -5,7 +5,10 @@
 odd_filter = [1, 2, 3, 4, 5]  # should print [1, 3, 5]
 
 def odd_number_filter_func(number_list):
-    filtered_list = []   
+    filtered_list = []
+    for element in number_list:
+        if element % 2 != 0:
+            filtered_list.append(element)
     print(filtered_list)
 
 
