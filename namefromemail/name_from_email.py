@@ -8,23 +8,13 @@
 
 
 def name_from_email(email_address):
-    last_name_string =""
-    first_name_string =""
-    flag_first_point = False
-    flag_second_point = False
+    full_name = ""
+    flag = False
     for i in range(len(email_address)):
-       if flag_first_point == False and flag_second_point == False:
-            if email_address[i] != "." and flag_first_point == False and flag_second_point == False:
-               first_name_string += email_address[i]
-            elif email_address[i] != "@" and flag_first_point == True and flag_second_point == False:
-                last_name_string += email_address[i]
-            elif email_address[i] == ".":
-                flag_first_point == True
-            elif email_address[i] == "@":
-                break
-                
-
-    full_name = first_name_string + " " + last_name_string
+        if email_address[i] != "@" and flag == False:
+            full_name += email_address[i]
+        else:
+            flag = True
 
     return (full_name)
 
